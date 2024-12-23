@@ -8,10 +8,6 @@
 This tutorial outlines the post-install configuration of the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Configure osTicket, post-installation](https://www.youtube.com)
-
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
@@ -24,11 +20,13 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 <h2>Post-Install Configuration Objectives</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Configure Roles 
+- Configure Departments
+- Configure Teams
+- Configure Agents (Workers)
+- Configure Users (Customers)
+- Configure SLAs
+- Configure Help Topics
 
 <h2>Configuration Steps</h2>
 
@@ -102,9 +100,59 @@ https://github.com/user-attachments/assets/deea2aec-65a2-4d7e-aa4b-882a399afe56
 
 </p>
 <p>
-  Configure Users (customers). Click on Agent Panel(Admin Panel will be in the top right). Click on Users then Add New
+  Configure Users (customers). Click on Agent Panel(Admin Panel will be in the top right). Click on Users then Add New.
+  ex. Kate, Ken
 
 https://github.com/user-attachments/assets/94e8dac5-0cb6-4c8d-b6db-54a985cf5a0f
-
-
 </p>
+<p>
+  Configure SLA. Go to the Admin Panel, if you aren't already. Click Manage, next SLA, then Add New SLA
+</p>
+  <p>Make an SLA, example below
+</p>
+
+  ![Screenshot 2024-12-22 200856](https://github.com/user-attachments/assets/ad8f2ccf-0b0d-4f0f-aa86-c03d81e25bfe)
+
+  <p>Create the following SLAs
+  </p>
+
+<p>
+Sev-A (Grace Period: 1 hour, Schedule: 24/7)
+</p>
+<p>
+Sev-B (Grace Period: 4 hours, Schedule: 24/7)
+</p>
+<p>
+Sev-C (Grace Period: 8 hours, Business Hours)
+</p>
+<br />
+
+<p>
+  Configure Help Topics (For when users create a ticket). In the Admin Panel. Click on Manage, Help Topics, then Add New Help Topic
+</p>
+
+![Screenshot 2024-12-22 211642](https://github.com/user-attachments/assets/d29c959b-c5dc-488a-979f-22582bf91583)
+
+  <p>Create the following Help Topics, example below 
+  </p>
+  
+![Screenshot 2024-12-22 213428](https://github.com/user-attachments/assets/6b3a42cc-554d-4f11-a734-d44097a3e733)
+
+
+<p>
+Business Critical Outage
+</p>
+<p>
+Personal Computer Issues
+</p>
+<p>
+Equipment Request
+</p>
+<p>
+Password Request 
+</p>
+<p>
+Other
+</p>
+<br />
+
